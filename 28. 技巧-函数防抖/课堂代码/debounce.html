@@ -7,41 +7,38 @@
     <title>Document</title>
   </head>
   <body>
+    <input type="text" />
     <script>
-      // function debounce(fn, delay) {
-      //   var timerId = null;
-
-      //   return function () {
-      //     var args = Array.prototype.slice.call(arguments);
-      //     clearTimeout(timerId);
-      //     timerId = setTimeout(function () {
-      //       fn.apply(this, args);
-      //     }, delay);
-      //   };
-      // }
-
-      function debounce(fn, delay) {
-        var timerId; // 最后一个计时器的id
+      function debounce(fn, duration) {
+        var timerId;
         return function () {
-          var args = Array.prototype.slice.call(arguments);
-          clearTimeout(timerId); // 清除最后一个计时器
+          clearTimeout(timerId);
+          // 将该函数的this传递到fn
+          var curThis = this;
+          // 将该函数的参数全部传递给fn
+          function slice() {
+            this;
+          }
+          var args = Array.prototype.slice.call(arguments, 0);
+
           timerId = setTimeout(function () {
-            fn.apply(this, args);
-          }, delay);
+            fn.apply(curThis, args);
+          }, duration);
         };
       }
 
-      function sum(a, b) {
-        console.log(a + b);
-      }
+      var newHandler = debounce(function (e) {
+        console.log('用户有按键', e, this.value, '耗时操作');
+      }, 2000);
 
-      var newSum = debounce(sum, 3000);
+      var inp = document.querySelector('input');
+      inp.addEventListener('input', newHandler);
 
-      var handler = debounce(function () {
+      var mouseMoveHandler = debounce(function () {
         console.log('move');
-      }, 200);
+      }, 1000);
 
-      window.addEventListener('mousemove', handler);
+      window.addEventListener('mousemove', mouseMoveHandler);
     </script>
   </body>
 </html>
