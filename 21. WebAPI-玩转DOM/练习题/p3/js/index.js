@@ -12,3 +12,4 @@ function setSendCodeButtonStatus() {}
  * 根据当前选中的爱好，设置已选择爱好文本
  */
 function setSelectedLoves() {}
+

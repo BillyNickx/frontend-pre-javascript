@@ -2,3 +2,4 @@
 // 合法的后缀名：.jpg  .gif  .bmp .webp  .png
 
 var filename = 'd://files/mymap/3.jpg';
+

@@ -16,3 +16,4 @@ var user = {
 printProperty(user, 'name'); // 打印：monica
 printProperty(user, 'age'); // 打印：17
 printProperty(user, 'sex'); // 打印：女
+

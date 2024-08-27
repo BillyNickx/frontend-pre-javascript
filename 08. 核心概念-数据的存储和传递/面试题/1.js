@@ -15,3 +15,4 @@ bar.n++;
 bar = foo.n;
 bar++;
 console.log(foo.n, foo.k.n);
+

@@ -5,3 +5,4 @@ function sum() {}
 var obj = {};
 
 console.log(obj.isFunc);
+

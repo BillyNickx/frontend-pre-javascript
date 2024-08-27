@@ -6,3 +6,4 @@ function hello() {
 }
 // 暴露为：count
 var count = 1;
+

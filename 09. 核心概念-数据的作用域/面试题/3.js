@@ -14,3 +14,4 @@ function m2() {
 
 m2();
 console.log(a);
+

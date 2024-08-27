@@ -5,3 +5,4 @@
  * @return {number} 范围内的随机整数
  */
 function getRandom(min, max) {}
+

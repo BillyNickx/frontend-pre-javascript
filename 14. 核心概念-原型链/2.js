@@ -6,3 +6,4 @@ var obj = {
 obj.__proto__ = null;
 
 clg;
+

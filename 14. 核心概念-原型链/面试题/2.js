@@ -3,3 +3,4 @@ console.log({} instanceof Object);
 console.log({}.toString instanceof Function);
 console.log(Object instanceof Function);
 console.log(Function instanceof Object);
+

@@ -5,3 +5,4 @@
  * @param {number} i2 下标2
  */
 function swap(arr, i1, i2) {}
+

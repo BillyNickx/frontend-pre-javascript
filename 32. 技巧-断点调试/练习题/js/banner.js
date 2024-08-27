@@ -127,3 +127,4 @@
   banner.onmouseenter = stop;
   banner.onmouseleave = start;
 })();
+

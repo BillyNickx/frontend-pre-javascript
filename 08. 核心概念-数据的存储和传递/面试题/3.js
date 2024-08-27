@@ -9,3 +9,4 @@ arr1[2].bar++;
 console.log(arr1[1] === arr2[0]);
 console.log(arr1[2] === arr2[1]);
 console.log(foo.bar);
+

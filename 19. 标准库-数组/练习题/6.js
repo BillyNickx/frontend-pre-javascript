@@ -69,3 +69,4 @@ Deck.prototype.print = function () {
  * 洗牌，打乱牌堆中的扑克牌顺序
  */
 Deck.prototype.shuffle = function () {};
+

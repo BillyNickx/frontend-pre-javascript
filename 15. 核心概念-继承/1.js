@@ -29,3 +29,4 @@ inherit(VIPUser, User);
 var vip = new VIPUser('abc', '123', '2022-10-01');
 
 vip.playFreeVideo();
+

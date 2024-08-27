@@ -8,3 +8,4 @@ var a = new A();
 
 console.log(a.a, a.b);
 console.log(A.a, A.b);
+

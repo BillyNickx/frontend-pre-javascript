@@ -14,3 +14,4 @@ console.log(u1.__proto__ === User.__proto__);
 console.log(Function.__proto__ === Object.__proto__);
 console.log(Function.prototype.__proto__ === Object.prototype.__proto__);
 console.log(Function.prototype.__proto__ === Object.prototype);
+

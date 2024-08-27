@@ -24,3 +24,4 @@ method2(foo);
 method3(foo.n);
 
 console.log(foo.n, arr.length);
+

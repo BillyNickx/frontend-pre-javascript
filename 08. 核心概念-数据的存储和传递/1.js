@@ -15,3 +15,4 @@ address = {
 };
 
 console.log(address.city, user1.addr.city);
+

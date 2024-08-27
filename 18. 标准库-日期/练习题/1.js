@@ -26,3 +26,4 @@ function formatDate(date, format) {
 
 var d = new Date();
 console.log(formatDate(d, 'yyyy年MM月dd日 HH时mm分ss秒'));
+

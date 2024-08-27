@@ -5,3 +5,4 @@
   how are you: 'fine thank you'
 */
 // 用字面量表示该对象，然后分别读取它的每个属性输出
+

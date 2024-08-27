@@ -18,3 +18,4 @@ function C() {
 }
 A();
 console.log('global end');
+

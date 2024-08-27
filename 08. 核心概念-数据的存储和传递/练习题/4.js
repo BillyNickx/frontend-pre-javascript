@@ -4,3 +4,4 @@
  * @param {Array<string>} keys 需要保留的属性名数组
  */
 function pick(obj, keys) {}
+

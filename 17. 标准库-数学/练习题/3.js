@@ -4,3 +4,4 @@
  * @return {any} 数组的随机一项
  */
 function getRandomItem(arr) {}
+

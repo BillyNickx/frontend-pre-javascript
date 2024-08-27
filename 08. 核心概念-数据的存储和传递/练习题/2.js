@@ -5,3 +5,4 @@
  * @param {string} key2 属性名2
  */
 function swap(obj, key1, key2) {}
+

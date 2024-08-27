@@ -7,3 +7,4 @@ var newStr = str.replace(/[a-z]/gi, function (s) {
   return '<' + s + '>';
 });
 console.log(newStr);
+

@@ -16,3 +16,4 @@ person1.sayHi();
 
 var person2 = new Person('姬', '成');
 person2.sayHi();
+

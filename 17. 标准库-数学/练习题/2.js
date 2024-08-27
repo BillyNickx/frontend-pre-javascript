@@ -5,3 +5,4 @@
  * @return {number} 随机字符串
  */
 function getRandomString(length) {}
+

@@ -17,3 +17,4 @@ function stop() {
   clearInterval(timerId);
   timerId = null;
 }
+

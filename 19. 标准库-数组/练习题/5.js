@@ -5,3 +5,4 @@ var fakeArr = {
   2: 'c',
   length: 3,
 };
+

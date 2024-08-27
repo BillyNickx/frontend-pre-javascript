@@ -14,3 +14,4 @@ var arr = Array.prototype.slice.call(obj);
 // var arr = [].slice.call(obj);
 
 console.log(arr instanceof Array);
+
