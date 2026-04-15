@@ -5,6 +5,9 @@
  */
 function printProperty(obj, key) {
   // 完成该函数
+  if(obj.hasOwnProperty(key)) {
+    console.log(obj[key])
+  }
 }
 
 var user = {

@@ -6,3 +6,11 @@
 */
 // 用字面量表示该对象，然后分别读取它的每个属性输出
 
+let obj = {
+    '0': 'a',
+    '1': 'b',
+    'how are you': 'fine thank you'
+}
+for (let objKey in obj) {
+    console.log(obj[objKey])
+}

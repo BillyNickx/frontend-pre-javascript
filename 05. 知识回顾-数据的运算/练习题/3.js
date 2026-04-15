@@ -7,6 +7,8 @@
 
   输出 正常、偏瘦、偏胖
 */
-var height = 185, // 身高（厘米）
-  weight = 100; // 体重（千克）
+var height = 167, // 身高（厘米）
+    weight = 65; // 体重（千克）
 
+const BMI = weight / ((height / 100) ** 2)
+console.log(BMI > 25 ? '偏胖' : BMI < 20 ? '偏瘦' : '正常');

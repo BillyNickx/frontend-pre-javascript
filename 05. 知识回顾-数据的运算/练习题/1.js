@@ -6,6 +6,13 @@
 */
 
 function sum(a, b) {
-  // code here
+    // code here
+    if (typeof a === 'number' && typeof  b === 'number') {
+        if (a + b) {
+            return a + b
+        }
+    }
+    return 0
 }
 
+console.log(sum(NaN,2))
