@@ -10,3 +10,8 @@ var arr2 = {
 
 // 判断arr1和arr2是否是真数组
 
+console.log(arr1 instanceof Array);
+console.log(arr2 instanceof Array);
+
+console.log(Object.getPrototypeOf(arr1) === Array.prototype);
+console.log(Object.getPrototypeOf(arr2) === Array.prototype);

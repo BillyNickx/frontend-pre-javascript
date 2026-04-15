@@ -6,6 +6,6 @@ function A() {}
 
 var a = new A();
 
-console.log(a.a, a.b);
-console.log(A.a, A.b);
+console.log(a.a, a.b); // undefined 2
+console.log(A.a, A.b); // 1 , 2
 

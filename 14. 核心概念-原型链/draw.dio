@@ -1,0 +1,108 @@
+<mxfile host="drawio-plugin" modified="2026-04-15T16:23:06.427Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="22.1.22" etag="iY80d93xAZJuZdOq6ioo" type="embed">
+  <diagram name="JS原型宇宙图" id="0">
+    <mxGraphModel dx="3976" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Function" value="Function&#xa;(函数构造器)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="550" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Object" value="Object&#xa;(对象构造器)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="570" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Array" value="Array&#xa;(数组构造器)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="215" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Person" value="Person&#xa;(自定义构造函数)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="550" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FunctionProto" value="Function.prototype&#xa;{ call, apply, bind... }" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="545" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ObjectProto" value="Object.prototype&#xa;{ toString, hasOwnProperty... }" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="200" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ArrayProto" value="Array.prototype&#xa;{ push, pop, map... }" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="205" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PersonProto" value="Person.prototype&#xa;{ constructor: Person, sayHi... }" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="540" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="objInstance" value="obj = {}&#xa;(普通对象实例)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="200" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pInstance" value="p = new Person()&#xa;(实例对象)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="270" y="780" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="arrInstance" value="arr = []&#xa;(数组实例)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="760" y="20" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nullNode" value="null" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="prototype" style="endArrow=block;html=1;strokeColor=#6c8ebf;" parent="1" source="Function" target="FunctionProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="prototype" style="endArrow=block;html=1;strokeColor=#6c8ebf;" parent="1" source="Object" target="ObjectProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="prototype" style="endArrow=block;html=1;strokeColor=#6c8ebf;" parent="1" source="Array" target="ArrayProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="prototype" style="endArrow=block;html=1;strokeColor=#6c8ebf;" parent="1" source="Person" target="PersonProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="__proto__" style="endArrow=block;html=1;strokeColor=#d79b00;" parent="1" source="pInstance" target="PersonProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="__proto__" style="endArrow=block;html=1;strokeColor=#d79b00;" parent="1" source="arrInstance" target="ArrayProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="__proto__" style="endArrow=block;html=1;strokeColor=#d79b00;" parent="1" source="objInstance" target="ObjectProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="__proto__" style="endArrow=block;html=1;strokeColor=#b85450;" parent="1" source="Person" target="FunctionProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="__proto__" style="endArrow=block;html=1;strokeColor=#b85450;" parent="1" source="Array" target="FunctionProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="__proto__" style="endArrow=block;html=1;strokeColor=#b85450;" parent="1" source="Object" target="FunctionProto" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="940" />
+              <mxPoint x="1200" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="__proto__" style="endArrow=block;html=1;strokeColor=#b85450;" parent="1" source="Function" target="FunctionProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="__proto__" style="endArrow=block;html=1;strokeColor=#82b366;" parent="1" source="FunctionProto" target="ObjectProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" value="__proto__" style="endArrow=block;html=1;strokeColor=#82b366;" parent="1" source="ArrayProto" target="ObjectProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" value="__proto__" style="endArrow=block;html=1;strokeColor=#82b366;" parent="1" source="PersonProto" target="ObjectProto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" value="__proto__" style="endArrow=block;html=1;strokeColor=#82b366;" parent="1" source="ObjectProto" target="nullNode" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" value="constructor" style="dashed=1;endArrow=block;html=1;strokeColor=#9673a6;" parent="1" source="PersonProto" target="Person" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" value="constructor" style="dashed=1;endArrow=block;html=1;strokeColor=#9673a6;" parent="1" source="ArrayProto" target="Array" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" value="constructor" style="dashed=1;endArrow=block;html=1;strokeColor=#9673a6;" parent="1" source="ObjectProto" target="Object" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" value="constructor" style="dashed=1;endArrow=block;html=1;strokeColor=#9673a6;" parent="1" source="FunctionProto" target="Function" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
