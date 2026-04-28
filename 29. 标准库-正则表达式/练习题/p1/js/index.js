@@ -20,6 +20,13 @@ function validateHelper(id, callback) {
 function validateEmail() {
   return validateHelper('email', function (value) {
     // 验证邮箱，返回错误消息，value为邮箱文本框的值
+    if(!value) {
+      return '请输入邮箱';
+    }
+    let mailReg = /^.+@[a-z]+(\.[a-z]+)+$/
+    if(!mailReg.test(value)) {
+      return '邮箱格式错误'
+    }
   });
 }
 
@@ -29,6 +36,13 @@ function validateEmail() {
 function validateStock() {
   return validateHelper('stock', function (value) {
     // 验证库存，返回错误消息，value为库存文本框的值
+    if(!value) {
+      return '请输入库存';
+    }
+    let reg = /^[1-9]\d*$/
+    if(!reg.test(value)) {
+      return '请输入数字'
+    }
   });
 }
 
@@ -38,6 +52,13 @@ function validateStock() {
 function validatePrice() {
   return validateHelper('price', function (value) {
     // 验证价格，返回错误消息，value为价格文本框的值
+    if(!value) {
+      return '请输入价格'
+    }
+    let reg = /^([1-9]\d*|0)\.\d{2}$/
+    if(!reg.test(value)) {
+      return '格式错误'
+    }
   });
 }
 

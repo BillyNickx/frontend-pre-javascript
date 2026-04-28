@@ -43,6 +43,7 @@
     for (var i = 0; i < datas.length; i++) {
       var span = document.createElement('span');
       span.className = 'fl';
+      bannerDots.appendChild(span);
     }
 
     change(0);
@@ -58,7 +59,7 @@
     var d = datas[index];
 
     bannerCover.href = d.link;
-    bannerCoverImg.src = d.mig;
+    bannerCoverImg.src = d.img;
 
     // span的选中效果
     //  先移除之前的选中效果
@@ -66,7 +67,7 @@
     if (selected) {
       selected.className = 'fl';
     }
-    var span = bannerDots.children.index;
+    var span = bannerDots.children[index];
     span.className = 'banner-dots-selected fl';
   }
 
