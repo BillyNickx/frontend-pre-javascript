@@ -30,3 +30,16 @@ var vip = new VIPUser('abc', '123', '2022-10-01');
 
 vip.playFreeVideo();
 
+class VipUser extends User {
+  constructor(username, password,expires) {
+    super();
+    this.expires = expires;
+  }
+}
+VipUser.prototype.stopFreeVideo = function () {
+  console.log('23123')
+}
+
+const vipUser1 = new VipUser();
+vipUser1.playFreeVideo();
+vipUser1.stopFreeVideo();
